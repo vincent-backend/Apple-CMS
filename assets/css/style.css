@@ -353,14 +353,14 @@ footer {
   background-image: url("../../assets/images/piracy/popup_ic_Detection.svg");
 }
 
-.modal-body .title {
+.modal-subtitle {
   font-size: 16px;
   font-weight: bold;
   color: #05031A;
   text-align: center;
 }
 
-.modal-body .description {
+.modal-body .modal-description {
   padding: 20px 0 54px 0;
   font-weight: 500;
   text-align: center;

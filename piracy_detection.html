@@ -75,15 +75,19 @@
     <!--Main Container-->
     <div class="container">
         <!-- Modal -->
-        <div class="modal fade" id="progModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="progModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="progModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="piracy-modal-img"></div>
+                        <div class="title">正在检测请勿关闭窗口…</div>
+                        <div class="description">本功能纯前端页面检测，没有请求任何接口！<br>
+                            可以抓包查证,保证数据安全不会泄露域名！<br>
+                            如果检测失败请多次尝试！</div>
                     </div>
                 </div>
             </div>
@@ -100,11 +104,11 @@
         <!--Header End-->
         <!--Search Bar-->
         <div class="search-bar">
-            <form class="search-bar-inner">
+            <div class="search-bar-inner">
                 <img src="assets/images/piracy/pirate_ic_search.svg" width="22" height="22">
                 <input type="text" class="form-control url-input" id="input_url" placeholder="http://baidu.com">
-                <button onclick="javascript:alert('aaa');" class="url-button" id="btn-piracy-detection">检测</button>
-            </form>
+                <button class="btn-piracy-detect" id="btn-piracy-detection">检测</button>
+            </div>
         </div>
         <!--Search Bar End-->
         <!-- Features of pirated cms -->

@@ -1,4 +1,6 @@
-$(".navbar-toggler, .btn").click(function () {
-    $("body").css({'overflow':'hidden', 'padding-right': '0px'});
-});
+/* Piracy Detection */
+$("#btn-piracy-detection").click(function() {
+    $('#progModal1').modal('show');
 
+
+});

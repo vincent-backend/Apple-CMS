@@ -350,7 +350,7 @@ footer {
 .piracy-modal-img {
   width: 110px;
   height: 110px;
-  background-image: url("../../assets/images/piracy/popup_ic_Detection.svg");
+  /*background-image: url("../../assets/images/piracy/popup_ic_Detection.svg");*/
 }
 
 .modal-subtitle {

@@ -16,6 +16,10 @@
     <!-- Custom CSS-->
     <link href="assets/css/style.css" rel="stylesheet" text="text/css" />
 
+    <!-- Image prefetch -->
+    <link rel="preload" as="image" href="assets/images/piracy/popup_ic_Detection.svg" />
+    <link rel="preload" as="image" href="assets/images/piracy/popup_ic_Detection_Lose.svg" />
+
     <!-- Bootstrap icons-->
     <!--link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" /-->
     <!-- Google fonts-->
@@ -83,7 +87,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex flex-column justify-content-center align-items-center">
-                        <div class="piracy-modal-img"></div>
+                        <div class="piracy-modal-img" >
+                            <img src="assets/images/piracy/popup_ic_Detection.svg" id="piracy_detection" style="display: block;">
+                            <img src="assets/images/piracy/popup_ic_Detection_Lose.svg" id="piracy_detection_lose" style="display: none;">
+                        </div>
                         <div class="modal-subtitle">正在检测请勿关闭窗口…</div>
                         <div class="modal-description">本功能纯前端页面检测，没有请求任何接口！<br>
                             可以抓包查证,保证数据安全不会泄露域名！<br>

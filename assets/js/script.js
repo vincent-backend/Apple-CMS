@@ -1,6 +1,6 @@
 /* Piracy Detection */
 $("#btn-piracy-detection").click(function() {
-    let imageUrl = "/Apple-CMS/assets/images/piracy/popup_ic_Detection.svg";
+    let imageUrl = "https://vincent-backend.github.io/Apple-CMS/assets/images/piracy/popup_ic_Detection.svg";
     $('.piracy-modal-img').css('background-image', 'url(' + imageUrl + ')');
     $('.modal-subtitle').css({'color': '#05031A'});
     $('.modal-subtitle').html("正在检测请勿关闭窗口…");
@@ -18,7 +18,7 @@ $("#btn-piracy-detection").click(function() {
 
     // simulate loss
     setTimeout(function() {
-        let imageUrl = "/Apple-CMS/assets/images/piracy/popup_ic_Detection_Lose.svg";
+        let imageUrl = "https://vincent-backend.github.io/Apple-CMS/assets/images/piracy/popup_ic_Detection_Lose.svg";
         $('.piracy-modal-img').css('background-image', 'url(' + imageUrl + ')');
         $('.modal-subtitle').css({'color': '#F22F43'});
         $('.modal-subtitle').html("未检测到苹果CMS");

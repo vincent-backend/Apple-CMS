@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>苹果CMS</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Global CSS-->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS-->
+    <link href="assets/css/style.css" rel="stylesheet" text="text/css" />
+
+    <!-- Bootstrap icons-->
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" /-->
+    <!-- Google fonts-->
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-row align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="苹果CMS" width="50" height="50"
+                    class="d-inline-block align-text-center">
+                <div class="logo-text">苹果CMS</div>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span>
+                    <img src="assets/images/navbar/menu.svg" width="48" height="48" />
+                </span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand d-flex flex-row align-items-center" href="index.html">
+                        <img src="assets/images/logo.png" alt="苹果CMS" width="50" height="50"
+                            class="d-inline-block align-text-center">
+                        <div class="logo-text">苹果CMS</div>
+                    </a>
+                    <button type="button" class="btn-close pe-1" data-bs-dismiss="offcanvas" aria-label="Close"
+                        style="font-size: 24px; font-weight: 700;"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">盗版检测</a>
+                        </li>
+                        <li class="menu-splitter">
+                            |
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">文档</a>
+                        </li>
+                        <li class="menu-splitter">
+                            |
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Telegram群</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--NavBar End-->
+    <!--Main Container-->
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="progModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="progModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header-->
+        <header>
+            <div class="header1 d-flex flex-column flex-md-row text-black justify-content-md-center">
+                <h1 class="d-inline-flex">
+                    <span>苹果</span><span class="text-cms">CMS</span>
+                </h1>
+                <h1>盗版程序检测</h1>
+            </div>
+        </header>
+        <!--Header End-->
+        <!--Search Bar-->
+        <div class="search-bar">
+            <form class="search-bar-inner">
+                <img src="assets/images/piracy/pirate_ic_search.svg" width="22" height="22">
+                <input type="text" class="form-control url-input" id="input_url" placeholder="http://baidu.com">
+                <button onclick="javascript:alert('aaa');" class="url-button" id="btn-piracy-detection">检测</button>
+            </form>
+        </div>
+        <!--Search Bar End-->
+        <!-- Features of pirated cms -->
+        <div class="prod-advant mb-md-5">
+            <div class="header d-flex flex-row justify-content-center align-items-center">
+                <div class="cross"></div>
+                <div class="title">盗版cms特征</div>
+                <div class="cross"></div>
+            </div>
+            <div class="content row row-cols-1 row-cols-md-2 gx-1">
+                <div
+                    class="item col d-flex flex-column justify-content-center justify-content-md-start align-items-center align-items-md-start pe-md-5">
+                    <img src="assets/images/piracy/pirate_ic_counterfeit.svg" width="80" height="80">
+                    <div class="title">仿冒域名</div>
+                    <div class="description">使用仿冒maccms相关域名，比如maccmsv10.com,maccms.pro,maccms.cn,等等。</div>
+                </div>
+                <div
+                    class="item col d-flex flex-column justify-content-center justify-content-md-start align-items-center align-items-md-start">
+                    <img src="assets/images/piracy/pirate_ic_after.svg" width="80" height="80">
+                    <div class="title">预留后门</div>
+                    <div class="description">盗版程序内部一般预留了后门程序，远程加载相关文件截获网站域名进行敲诈勒索。</div>
+                </div>
+                <div
+                    class="item col d-flex flex-column justify-content-center justify-content-md-start align-items-center align-items-md-start">
+                    <img src="assets/images/piracy/pirate_ic_lie.svg" width="80" height="80">
+                    <div class="title">谎话连篇</div>
+                    <div class="description">假冒官网人员发布谣言信息，混淆视听造成新人不知道如何是好，可能信以为真。</div>
+                </div>
+                <div
+                    class="item col d-flex flex-column justify-content-center justify-content-md-start align-items-center align-items-md-start pe-md-5">
+                    <img src="assets/images/piracy/pirate_ic_menace.svg" width="80" height="80">
+                    <div class="title">威胁攻击</div>
+                    <div class="description">如果你泄露了域名，盗版程序那边随时会进行ddos，cc攻击，导致网站瘫痪cdn被封，切记不认在任何地方泄露域名。</div>
+                </div>
+            </div>
+        </div>
+        <!-- Product advantages End -->
+    </div>
+    <!--Main Container End-->
+    <!--Footer-->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="footer-download d-flex flex-wrap align-items-center justify-content-center">
+                        <a class="footer-download-link" href="#">
+                            苹果cms
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link" href="#">
+                            苹果cmsV8
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link" href="#">
+                            苹果cmsV10
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link d-flex" href="#">
+                            苹果cms下载
+                        </a>
+                        <div class="footer-download-splitter"></div>
+                        <a class="footer-download-link d-flex" href="#">
+                            苹果cms在线手册
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start mt-2 mt-md-1">
+                    <img src="assets/images/footer/51-la.png" width="74" height="74">
+                    <span class="footer-support-text">提供CDN赞助</span>
+                </div>
+                <div class="footer-license">© 2020 #5CMS or MACCMS MIT license</div>
+                <div class="footer-statement">声明：本站所开发的相关程序请在遵守法律的前提下使用，对用户在使用过程中的信息内容本站不负任何责任！</div>
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer-->
+
+
+    <!--Global Scripts-->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/jQuery/jquery.min.js"></script>
+    <!--Custom Scripts-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,583 @@
+/** Global **/
+:root {
+  --bs-navbar-toggler-padding-y: 0;
+  --bs-navbar-toggler-padding-x: 0;
+}
+
+@font-face {
+  font-family: "PingFang-SC";
+  src: url("../../assets/font/PingFang-Medium.ttf");
+}
+
+/********* Responsive design <768 *********/
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+html,
+body {
+  font-family: "PingFang-SC";
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d5366;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  background-image: url("../../assets/images/home/bg-sm.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.container,
+.container-fluid {
+  max-width: 768px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal-header  {
+  border-bottom: none;
+}
+
+.modal-content {
+  border-radius: 30px;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: #05031a;
+  margin: 10px 0 0 10px;
+}
+
+.offcanvas {
+  min-width: 100%;
+  background-image: url("../../assets/images/home/bg-sm.png");
+  background-position: top right;
+  padding: 0rem 1.25rem;
+}
+
+.offcanvas-collapse {
+  position: fixed;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.offcanvas-collapse.open {
+  visibility: visible;
+  transform: translateX(100%);
+}
+
+.offcanvas-header {
+  padding-top: 7px;
+  padding-left: 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #05031a;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 21px;
+  color: #05031a;
+  font-weight: 400;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-nav > .active > a {
+  color: #40CC92;
+  font-weight: 600;
+}
+.nav-item > a:hover {
+  color: #40CC92;
+}
+
+.navbar-toggler {
+  padding: 0px;
+  border: 0px;
+}
+
+.menu-splitter {
+  color: #d9e6e7;
+  display: none;
+}
+
+header {
+  margin-top: 150px;
+}
+
+.text-cms {
+  color: #40cc92;
+}
+
+.header1 {
+  font-weight: bold;
+  color: #05031A;
+}
+
+.header2 {
+  padding-top: 1.7rem;
+  font-size: 2.125rem;
+  word-break: break-all;
+}
+
+.header3 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+
+/** Footer **/
+footer {
+  padding-bottom: 50px;
+}
+
+.footer-download {
+  padding-top: 40px;
+}
+
+.footer-download-link {
+  color: #05031A !important;
+  font-size: 1.08rem;
+  word-break: normal;
+}
+
+.footer-download-splitter {
+  background-color: rgba(217, 230, 231, 1);
+  width: 2px;
+  height: 16px;
+  margin: 0 25px;
+}
+
+.footer-support-text {
+  color: #4d5366;
+  font-size: 18px;
+}
+
+.footer-license {
+  color: #4d5366;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-statement {
+  padding-top: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/** Index **/
+/*Download Panel*/
+.download-panel {
+  margin-top: 120px;
+}
+
+.download-item {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px -3px 0px 0px #d9e6e7;
+  border-radius: 30px;
+  border: 2px solid #d9e6e7;
+  margin-bottom: 20px;
+}
+
+.download-item .div-icon {
+  width: 60px;
+  height: 60px;
+  background: #323643;
+  border-radius: 30px;
+}
+
+.download-item .div-icon .card_arraw {
+  display: none;
+}
+
+.download-item .div-icon .card_down {
+  display: block;
+}
+
+.download-item .caption {
+  width: 150px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #05031a;
+  margin-left: 22px;
+  margin-top: 0;
+}
+
+
+/* Product Advantages */
+.prod-advant {
+  max-width: 1054px;
+  margin-top: 80px;
+}
+
+.prod-advant .header {
+  padding-top: 40px;
+  margin-bottom: 52px;
+}
+
+.prod-advant .header .title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #05031a;
+  padding: 0 20px;
+}
+
+.prod-advant .header .cross {
+  width: 12px;
+  height: 4px;
+  background: #05031a;
+}
+
+.prod-advant .content .item {
+  margin-bottom: 60px;
+}
+
+.prod-advant .content .item .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #05031a;
+  margin: 14px 0;
+}
+
+.prod-advant .content .item .description {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4d5366;
+}
+
+/* Acknowledge */
+.acknowledge {
+  margin: 0 0 90px 0;
+}
+
+.acknowledge .item {
+  width: auto;
+  height: 60px;
+  box-shadow: inset 0px -3px 0px 0px #d9e6e7;
+  border-radius: 30px;
+  border: 2px solid #d9e6e7;
+}
+
+.acknowledge .item .text {
+  font-weight: 400;
+}
+
+/**** piracy_detection ****/
+.search-bar {
+  margin: 48px 0 90px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 680px;
+  height: 64px;
+  padding-left: 20px;
+  box-shadow: inset 0px -3px 0px 0px #D9E6E7;
+  border-radius: 32px;
+  border: 1px solid #D9E6E7;
+}
+
+.search-bar-inner .url-input {
+  margin: 0 6px;
+  font-size: 20px;
+  border: none;
+}
+
+.search-bar-inner .url-button {
+  width: 120px;
+  height: 64px;
+  background: #40CC92;
+  border: 0px;
+  border-radius: 0px 100px 100px 0px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767.98px) {
+/**** Index ****/
+  /* download-item hover */
+.download-item:active {
+    background-color: #323643;
+    background-image: url("../../assets/images/home/home_card_hover-sm.svg");
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border: 0px;
+}
+.download-item:active .div-icon {
+  background: #FFFFFF;
+}
+.download-item:active .card_arraw {
+  display: block;
+}
+.download-item:active .card_down {
+  display: none;
+}
+.download-item:active .caption {
+  color: #FFFFFF;
+  width: auto;
+  font-size: 30px;
+}
+}
+
+/********* Responsive design >768  *********/
+@media (min-width: 768px) {
+
+  /** Global **/
+  html,
+  body {
+    font-size: 14px;
+    color: #4d5366;
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+  }
+
+  body {
+    background-image: url("../../assets/images/home/bg.png");
+  }
+
+  .container,
+  .container-fluid {
+    max-width: 1140px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .offcanvas {
+    min-width: auto;
+    background-image: none;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 20px;
+    margin-top: 0px;
+  }
+
+  .menu-splitter {
+    display: block;
+  }
+
+  header {
+    margin-top: 150px;
+  }
+
+  .header1 {
+    color: var(--bs-black);
+  }
+
+  .header2 {
+    padding-top: 1.125rem;
+    font-size: 24px;
+    word-break: break-all;
+  }
+
+  .header3 {
+    padding-top: 1rem;
+    word-break: break-all;
+  }
+
+  /*Footer*/
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .footer-download {
+    padding-top: 40px;
+  }
+
+  .footer-download-link {
+    font-size: 14px;
+  }
+
+  .footer-download-splitter {
+    background-color: rgba(217, 230, 231, 1);
+    width: 0.054rem;
+    height: 0.875rem;
+    margin: 0 12px;
+  }
+
+  .footer-license {
+    padding-top: 84px;
+  }
+
+  .footer-support-text {
+    color: #4d5366;
+    font-size: 14px;
+  }
+
+  .footer-statement {
+    padding-top: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  /** Index **/
+  /* Download Panel */
+  .download-panel {
+    margin-top: 60px;
+    max-width: 880px;
+    height: 240px;
+  }
+
+  .download-item {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    box-shadow: inset 0px -3px 0px 0px #d9e6e7;
+    border-radius: 30px;
+    border: 1px solid #d9e6e7;
+    transition: height 0.4s;
+  }
+
+  .download-item .div-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 34px;
+    left: 38%;
+    background: #323643;
+    border-radius: 30px;
+    transition: left 0.4s;
+  }
+
+  .download-item .div-icon .card_arraw {
+    display: none;
+  }
+
+  .download-item .div-icon .card_down {
+    display: block;
+  }
+
+  .download-item .caption {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #05031a;
+    margin-left: 0;
+    margin-top: 20px;
+    transition: bottom 0.4s;
+  }
+
+  /* download-item hover */
+  .download-item:hover {
+    width: 280px;
+    height: 210px;
+    background-color: #323643;
+    background-image: url("../../assets/images/home/home_card_hover.svg");
+    background-repeat: no-repeat;
+    box-shadow: none;
+  }
+
+  .download-item:hover .caption {
+    left: 24px;
+    bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .download-item:hover .div-icon {
+    top: 10px;
+    left: 74%;
+    background: #FFFFFF;
+  }
+
+  .download-item:hover .card_arraw {
+    display: block;
+  }
+
+  .download-item:hover .card_down {
+    display: none;
+  }
+
+  /* Product advantage */
+  .prod-advant .header {
+    padding-top: 70px;
+    margin-bottom: 84px;
+  }
+
+  /* Product Advantages */
+  .prod-advant {
+    max-width: 1054px;
+    margin-top: 80px;
+  }
+
+  .prod-advant .header {
+    margin-bottom: 84px;
+  }
+
+  .prod-advant .content .item {
+    margin-bottom: 70px;
+  }
+
+  .prod-advant .content .item .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #05031a;
+    margin: 14px 0;
+  }
+
+  .prod-advant .content .item .description {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d5366;
+  }
+
+  /* Acknowledge */
+  .acknowledge {
+    margin: 0 0 90px 0;
+  }
+
+  .acknowledge .item {
+    width: auto;
+    height: 36px;
+    box-shadow: inset 0px -2px 0px 0px #d9e6e7;
+    border-radius: 18px;
+    border: 1px solid #d9e6e7;
+  }
+}
+

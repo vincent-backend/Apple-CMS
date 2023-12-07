@@ -433,6 +433,67 @@ select option {
 
 .document-container {
   margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.code {
+  border: 1px solid #E2E2E2;
+}
+.code-header {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E2E2E2;
+  padding-left: 17px;
+}
+.code-body {
+  display: flex;
+  flex-direction: row;
+}
+.code-num {
+  width: 60px;
+  height: 100%;
+  background: #F2F2F2;
+  border-right: 1px solid #E2E2E2;
+  text-align: center;
+}
+.code-num-list {
+  display: block;
+  list-style-type: none;
+  padding: 6px 0 0 0;
+  line-height: 26px;
+}
+
+.code-space {
+  width: 100%;
+  padding: 6px 0 0 20px;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+.code-space-list {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  line-height: 26px;
+}
+.code-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.code-space-1 {
+  width: 2px;
+  height: 16px;
+  background: #4D5366;
+  margin-right: 4px;
+}
+.code-space-2 {
+  width: 24px;
+  height: 16px;
+  border-left: 2px solid #4D5366;
+  border-right: 2px solid #4D5366;
+  margin-right: 4px;
 }
 
 /**** Responsive Design < 768px ****/
@@ -756,6 +817,5 @@ select option {
   .document-container .tab-content {
     border-left: 1px solid #D9E6E7;
     padding-left: 80px;
-    margin-bottom: 90px;
   }
 }

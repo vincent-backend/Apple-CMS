@@ -24,6 +24,9 @@ $("#btn-piracy-detection").click(function() {
         $('.modal-subtitle').css({'color': '#F22F43'});
         $('.modal-subtitle').html("未检测到苹果CMS");
     }, 6000);
+});
 
-
+/* Documentation */
+$("#offcanvasDocumentMenu .nav-link").click(function(){
+    $('.offcanvas').offcanvas('hide');
 });

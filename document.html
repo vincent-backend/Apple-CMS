@@ -87,21 +87,22 @@
                     style="font-size: 24px; font-weight: 700;"></button>
             </div>
             <div class="offcanvas-body">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                    aria-orientation="vertical">
-                    <select class="form-select" style="max-width: 100px; border: 0;" aria-label="Default select example">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <select class="form-select" style="max-width: 100px; border: 0;"
+                        aria-label="Default select example">
                         <option value="V10" selected>V10</option>
                         <option value="V8">V8</option>
-                      </select>                    
-                    <button class="nav-link" style="color: #05031A; font-size: 24px; font-weight: bold;" disabled>基础说明</button>
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    </select>
+                    <button class="nav-link" style="color: #05031A; font-size: 24px; font-weight: bold;"
+                        disabled>基础说明</button>
+                    <button class="nav-link active" id="v-pills-start-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-start" type="button" role="tab" aria-controls="v-pills-start"
                         aria-selected="true">开始使用</button>
-                    <button class="btn-dmenu nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    <button class="btn-dmenu nav-link" id="v-pills-problems-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-problems" type="button" role="tab" aria-controls="v-pills-problems"
                         aria-selected="false">常见问题</button>
-                    <button class="btn-dmenu nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    <button class="btn-dmenu nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-templates"
                         aria-selected="false">模版标签</button>
                 </div>
             </div>
@@ -110,38 +111,63 @@
     <!--NavBar End-->
     <!--Main Container-->
     <div class="container">
-        <div class="d-flex flex-row align-items-start">
+        <div class="document-container d-flex flex-row align-items-start" style="position: relative;">
             <div class="document-sidebar">
-                <div class="nav flex-column nav-pills  me-3" id="v-pills-tab" role="tablist"
-                    aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Home</button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                        aria-selected="false">Profile</button>
-                    <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"
-                        aria-selected="false" disabled>Disabled</button>
-                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">Messages</button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                        aria-selected="false">Settings</button>
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <select class="form-select" style="max-width: 100px; border: 0; margin-bottom: 20px;"
+                        aria-label="Default select example">
+                        <option value="V10" selected>V10</option>
+                        <option value="V8">V8</option>
+                    </select>
+                    <button class="nav-link"
+                        style="color: #05031A; font-size: 20px; font-weight: bold; padding-bottom: 20px;"
+                        disabled>基础说明</button>
+                    <button class="nav-link d-sidebar-menu active" id="v-pills-start-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-start" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">开始使用</button>
+                    <button class="nav-link" id="v-pills-problems-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-problems" type="button" role="tab" aria-controls="v-pills-problems"
+                        aria-selected="false">常见问题</button>
+                    <button class="nav-link" id="v-pills-templates-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-templates" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">模版标签</button>
                 </div>
             </div>
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                    aria-labelledby="v-pills-home-tab" tabindex="0">Home</div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-                    tabindex="0">Profile</div>
-                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
-                    tabindex="0">...</div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-                    tabindex="0">...</div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
-                    tabindex="0">...</div>
+                <!-- Quick Start -->
+                <div class="tab-pane fade show active" id="v-pills-start" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <h2>开始使用-入门指南</h2>
+                    <p style="padding-top: 20px;">苹果CMS程序是一套采用PHP+MYSQL环境下运行的完善而强大的快速建站系统。 经过近多年的开发经验和技术积累，苹果CMS程序已逐步走向成熟，在易用性和功能上已经成为同行中的佼佼者。
+                        程序体积小->优化程序代码，运行速度快->高效的缓存处理，只要普通的虚拟主机就可以完美搭建起来，建站成本非常低。
+                        仿MVC模板分离，内置标签，自定义函数标签接口，强大的自定义采集功能，只要你会HTML就可以轻松做出个性化的网站。 
+                        程序易用性和功能上一直以来都积极采纳广大站长提出的各种好的建议，迅速响应各种紧急问题，我们的服务理念贯穿其中，保证每一位站长每一个环节都可以从容应对。
+                    </p>
+                    <p>
+                        v10采用tp5.x内核进行开发，扩展了模板处理引擎，将后台程序与html模板简单的分离出来，让设计人员与程序人员最大限度的发挥自己的优势而互不干扰，大大加快了项目有序、快速的完成。 
+                        即使您是第一次接触，也会在最短的时间内熟练掌握它的使用方法。后台管理模块，一目了然，操作简单，绝对不会让您眼花缭乱。
+                    </p>
+                    <h3 style="padding-top: 20px;">兼容性和面向场景</h3>
+                    <p style="padding-top: 10px;">1、Windows 平台： IIS/Apache/Nginx/等 + PHP(5.5 +) + MySQL(5.5 +)<br>
+                        2、Linux/Unix 平台： Apache/Nginx/等 + PHP (5.5 +) + MySQL(5.5 +) (PHP必须在非安全模式下运行)
+                    </p>
+                    <h3 style="padding-top: 20px;">获得 苹果CMS v10</h3>
+                    <p style="padding-top: 10px;">你可以在我们的官网首页 下载到 苹果CMS 的最新版，它经过了自动化构建，更适合用于生产环境。目录结构如下：</p>
+
+                </div>
+                <!-- Quick Start End -->
+                <!-- Problems -->
+                <div class="tab-pane fade" id="v-pills-problems" role="tabpanel" aria-labelledby="v-pills-problems-tab"
+                    tabindex="0">
+                
+                </div>
+                <!-- Problems End -->
+                <!-- Templates -->
+                <div class="tab-pane fade" id="v-pills-templates" role="tabpanel"
+                    aria-labelledby="v-pills-templates-tab" tabindex="0">
+                
+                </div>
+                <!-- Templates End -->
             </div>
         </div>
     </div>

@@ -27,6 +27,26 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #05031A;
+  line-height: 47px;
+}
+
+h3 {
+  font-size: 27px;
+  font-weight: bold;
+  color: #323643;
+  line-height: 28px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
 html,
 body {
   font-family: "PingFang-SC";
@@ -373,6 +393,17 @@ footer {
 }
 
 /** Document.html **/
+select {
+  font-family: "PingFang-SC";
+  font-size: 18px;
+}
+
+select option {
+  font-family: "PingFang-SC";
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .document-logo {
   display: block !important;
 }
@@ -382,10 +413,13 @@ footer {
 .document-sidebar {
   display: none;
 }
+.sidebar-splitter {
+  display: none;
+}
 
 .document-menu .offcanvas-body .nav-link {
   background: none;
-  color: #4D5366;
+  color: #4d5366;
   text-align: left;
   font-size: 21px;
   font-weight: 500;
@@ -397,15 +431,8 @@ footer {
   font-weight: bold;
 }
 
-select {
-  font-family: "PingFang-SC";
-  font-size: 18px;
-}
-
-select option {
-  font-family: "PingFang-SC";
-  font-size: 18px;
-  font-weight: 500;
+.document-container {
+  margin-top: 50px;
 }
 
 /**** Responsive Design < 768px ****/
@@ -455,6 +482,27 @@ select option {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #05031A;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #05031A;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
   .offcanvas {
     min-width: auto;
     background-image: none;
@@ -674,6 +722,40 @@ select option {
   }
   .document-sidebar {
     display: block;
-    max-width: 160px;
-  }  
+    min-width: 150px;
+  }
+
+  .document-sidebar .nav-link {
+    height: 20px;
+    background: none;
+    border-radius: 0;
+    color: #4d5366;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    margin: 10px 0 10px 0;
+  }
+  .document-sidebar .nav-link.active {
+    background: none;
+    color: #40cc92;
+    font-weight: bold;
+    border-right: 4px solid #40cc92;
+  }
+
+  select {
+    font-family: "PingFang-SC";
+    font-size: 16px;
+  }
+
+  select option {
+    font-family: "PingFang-SC";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .document-container .tab-content {
+    border-left: 1px solid #D9E6E7;
+    padding-left: 80px;
+    margin-bottom: 90px;
+  }
 }

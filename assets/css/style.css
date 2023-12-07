@@ -1,4 +1,9 @@
-/** Global **/
+/**************************
+/* Stylesheet for Apple CMS
+/* Created 30/11/2023
+**************************/
+
+/**** Global ****/
 :root {
   --bs-navbar-toggler-padding-y: 0;
   --bs-navbar-toggler-padding-x: 0;
@@ -31,7 +36,9 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
-body { padding-right: 0 !important }
+body {
+  padding-right: 0 !important;
+}
 
 .no-scroll {
   overflow-y: hidden;
@@ -55,7 +62,7 @@ body {
   --bs-modal-width: 370px;
 }
 
-.modal-header  {
+.modal-header {
   border-bottom: none;
 }
 
@@ -84,7 +91,7 @@ body {
 .offcanvas-collapse {
   position: fixed;
   bottom: 0;
-  left: -100%;
+  left: 100%;
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -95,7 +102,7 @@ body {
 }
 .offcanvas-collapse.open {
   visibility: visible;
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .offcanvas-header {
@@ -120,11 +127,11 @@ body {
 }
 
 .navbar-nav > .active > a {
-  color: #40CC92;
+  color: #40cc92;
   font-weight: 600;
 }
 .nav-item > a:hover {
-  color: #40CC92;
+  color: #40cc92;
 }
 
 .navbar-toggler {
@@ -147,7 +154,7 @@ header {
 
 .header1 {
   font-weight: bold;
-  color: #05031A;
+  color: #05031a;
 }
 
 .header2 {
@@ -163,7 +170,6 @@ header {
   word-break: break-all;
 }
 
-
 /** Footer **/
 footer {
   padding-bottom: 50px;
@@ -174,7 +180,7 @@ footer {
 }
 
 .footer-download-link {
-  color: #05031A !important;
+  color: #05031a !important;
   font-size: 1.08rem;
   word-break: normal;
 }
@@ -247,7 +253,6 @@ footer {
   margin-top: 0;
 }
 
-
 /* Product Advantages */
 .prod-advant {
   max-width: 1054px;
@@ -306,7 +311,7 @@ footer {
   font-weight: 400;
 }
 
-/**** piracy_detection ****/
+/** piracy_detection **/
 .search-bar {
   margin: 48px 0 90px 0;
   display: flex;
@@ -322,9 +327,9 @@ footer {
   max-width: 680px;
   height: 64px;
   padding-left: 20px;
-  box-shadow: inset 0px -3px 0px 0px #D9E6E7;
+  box-shadow: inset 0px -3px 0px 0px #d9e6e7;
   border-radius: 32px;
-  border: 1px solid #D9E6E7;
+  border: 1px solid #d9e6e7;
 }
 
 .search-bar-inner .url-input {
@@ -336,11 +341,11 @@ footer {
 .search-bar-inner .btn-piracy-detect {
   width: 150px;
   height: 64px;
-  background: #40CC92;
+  background: #40cc92;
   border: 0px;
   border-radius: 0px 100px 100px 0px;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .modal-header {
@@ -356,7 +361,7 @@ footer {
 .modal-subtitle {
   font-size: 16px;
   font-weight: bold;
-  color: #05031A;
+  color: #05031a;
   text-align: center;
 }
 
@@ -364,38 +369,49 @@ footer {
   padding: 20px 0 54px 0;
   font-weight: 500;
   text-align: center;
-  color: #4D5366;
+  color: #4d5366;
 }
 
+/** Document.html **/
+.document-logo {
+  display: block !important;
+}
+.document-logo-md {
+  display: none !important;
+}
+.document-sidebar {
+  display: none;
+}
+
+/**** Responsive Design < 768px ****/
 @media (max-width: 767.98px) {
-/**** Index ****/
+  /**** Index ****/
   /* download-item hover */
-.download-item:active {
+  .download-item:active {
     background-color: #323643;
     background-image: url("../../assets/images/home/home_card_hover-sm.svg");
     background-repeat: no-repeat;
     box-shadow: none;
     border: 0px;
-}
-.download-item:active .div-icon {
-  background: #FFFFFF;
-}
-.download-item:active .card_arraw {
-  display: block;
-}
-.download-item:active .card_down {
-  display: none;
-}
-.download-item:active .caption {
-  color: #FFFFFF;
-  width: auto;
-  font-size: 30px;
-}
+  }
+  .download-item:active .div-icon {
+    background: #ffffff;
+  }
+  .download-item:active .card_arraw {
+    display: block;
+  }
+  .download-item:active .card_down {
+    display: none;
+  }
+  .download-item:active .caption {
+    color: #ffffff;
+    width: auto;
+    font-size: 30px;
+  }
 }
 
-/********* Responsive design >768  *********/
+/**** Responsive design >768 ****/
 @media (min-width: 768px) {
-
   /** Global **/
   html,
   body {
@@ -427,6 +443,9 @@ footer {
   }
 
   .menu-splitter {
+    width: 1px;
+    height: 12px;
+    background: #d9e6e7;
     display: block;
   }
 
@@ -552,7 +571,7 @@ footer {
     font-size: 30px;
     font-weight: 400;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-left: 0;
     margin-top: 20px;
   }
@@ -560,7 +579,7 @@ footer {
   .download-item:hover .div-icon {
     top: 10px;
     left: 74%;
-    background: #FFFFFF;
+    background: #ffffff;
   }
 
   .download-item:hover .card_arraw {
@@ -616,5 +635,20 @@ footer {
     border-radius: 18px;
     border: 1px solid #d9e6e7;
   }
-}
 
+  /** Document.html **/
+  .document-logo {
+    display: none !important;
+  }
+  .document-logo-md {
+    display: flex !important;
+    flex-direction: row;
+  }
+  .document-menu {
+    display: none;
+  }
+  .document-sidebar {
+    display: block;
+    max-width: 160px;
+  }  
+}

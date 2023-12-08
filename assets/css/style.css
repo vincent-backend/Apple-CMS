@@ -71,11 +71,14 @@ body {
   background-repeat: no-repeat;
 }
 
-.container,
-.container-fluid {
+.container {
   max-width: 768px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.container-fluid {
+  max-width: 768px;
 }
 
 .modal {
@@ -814,6 +817,7 @@ select option {
     font-size: 16px;
     font-weight: 500;
   }
+  
   .document-container .tab-content {
     border-left: 1px solid #D9E6E7;
     padding-left: 80px;
